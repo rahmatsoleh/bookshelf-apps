@@ -72,7 +72,7 @@ main ul {
     margin: 1em auto;
 }
 
-/* Home */
+
 .tambah-data {
     background-color: var(--success);
     color: white;
@@ -151,10 +151,7 @@ main .content form button:hover{
 .edit { background-color: var(--solid-blue);}
 .hapus { background-color: var(--red);}
 
-/* Akhir Home */
 
-
-/* Reading */
 
 section {
     width: 100%;
@@ -196,9 +193,7 @@ section .data h2 {
     cursor: pointer;
 }
 
-/* Akhir dari Reading */
 
-/* Modal */
 #modal {
     position: fixed;
     background-color: rgba(0,0,0,.9);
@@ -254,20 +249,13 @@ section .data h2 {
     background-color: #777;
 }
 
-/* Akhir Modal */
 
-/* Footer */
 footer {
     background-color: var(--dark-blue);
     color: white;
     text-align: center;
     padding: 1em;
-    /* position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0; */
 }
-/* Akhir Footer */
 
 
 
@@ -309,7 +297,6 @@ footer {
 }
 
 @media screen and (max-width: 452px) {
-    /* main {width: 90%;} */
     .menu { 
         padding: none;
         font-size: 12px;
