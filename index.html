@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahmat Soleh | Bookshelf Apps</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/font/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2><i class="fas fa-book-open"></i> Bookshelf Apps</h2>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li class="menu active" data-menu="home">Data Buku</li>
+                <li class="menu" data-menu="reading" >Sedang di Baca</li>
+                <li class="menu" data-menu="finish" >Selesai di Baca</li>
+            </ul>
+        </aside>
+        <div class="content">
+            <article id="home" class="">
+                <button class="tambah-data"><i class="fas fa-plus"></i> Tambahkan Data Buku</button>
+                <form action="" method="post">
+                    <button type="button" id="reload" onclick="window.location.reload();"><i class="fas fa-sync-alt"></i></button>
+                    <input type="text" id="keyword" placeholder="Masukan Judul Buku" autofocus autocomplete="off">
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>ID BUKU</th>
+                            <th>JUDUL</th>
+                            <th>PENULIS</th>
+                            <th>TAHUN</th>
+                            <th>STATUS</th>
+                            <th>AKSI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </article>
+            <article id="reading" class="d-none">
+                <h2>Buku Yang Sedang di Baca</h2>
+                
+            </article>
+            <article id="finish" class="d-none">
+                <h2>Buku Selesai di Baca</h2>
+                
+            </article>
+            <article id="modal" class="modal d-none">
+                <div class="container">
+                    <h1>Menambahkan Data Buku</h1>
+                    <hr>
+                    <form method="POST">
+                        <div class="form-group">
+                            <label for="id">ID Buku</label>
+                            <input type="text" id="id" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="judul">Judul Buku</label>
+                            <input type="text" id="judul" placeholder="Masukan Judul Buku">
+                        </div>
+                        <div class="form-group">
+                            <label for="penulis">Nama Penulis</label>
+                            <input type="text" id="penulis" placeholder="Masukan Nama Penulis">
+                        </div>
+                        <div class="form-group">
+                            <label for="tahun">Tahun</label>
+                            <input type="number" id="tahun" placeholder="Tahun Buku">
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Status di Baca</label>
+                            <select name="" id="status">
+                                <option value="false">Sedang di Baca</option>
+                                <option value="true">Selesai di Baca</option>
+                            </select>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="cancel"><i class="fas fa-times"></i> Cancel</button>
+                            <button type="submit" id="submit"><i class="fas fa-save"></i> Simpan</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <h3>Rahmat Soleh | Front End Developer</h3>
+        <p>Dicoding | Front End Developer | Indosat IdCamp 2021</p>
+    </footer>
+
+<script src="assets/js/dom.js"></script>
+<script src="assets/js/data.js"></script>
+
+</body>
+</html>
